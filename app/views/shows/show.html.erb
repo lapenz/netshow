@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Banda:</strong>
+  <%= @show.banda.nome %>
+</p>
+
+<p>
+  <strong>Local:</strong>
+  <%= @show.local %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @show.data %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @show.hora %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @show.descricao %>
+</p>
+
+<%= link_to 'Edit', edit_show_path(@show) %> |
+<%= link_to 'Back', shows_path %>

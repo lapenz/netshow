@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  banda: 1
+  local: MyString
+  data: 2015-09-16
+  hora: 2015-09-16 22:27:20
+  descricao: MyString
+
+two:
+  banda: 1
+  local: MyString
+  data: 2015-09-16
+  hora: 2015-09-16 22:27:20
+  descricao: MyString
