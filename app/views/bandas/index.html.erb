@@ -16,9 +16,9 @@
       <tr>
         <td><%= banda.nome %></td>
         <td><%= banda.categoria %></td>
-        <td><%= link_to 'Show', banda %></td>
-        <td><%= link_to 'Edit', edit_banda_path(banda) %></td>
-        <td><%= link_to 'Destroy', banda, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', banda, class: "btn btn-default", role: "button" %></td>
+        <td><%= link_to 'Edit', edit_banda_path(banda), class: "btn btn-default", role: "button" %></td>
+        <td><%= link_to 'Destroy', banda, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-red", role: "button" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Banda', new_banda_path %>
+<%= link_to 'New Banda', new_banda_path, class: "btn btn-default", role: "button" %>

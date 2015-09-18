@@ -19,12 +19,12 @@
       <tr>
         <td><%= show.banda.nome %></td>
         <td><%= show.local %></td>
-        <td><%= show.data %></td>
-        <td><%= show.hora %></td>
+        <td><%= show.data.strftime("%d/%m/%Y") %></td>
+        <td><%= show.hora.strftime("%H:%M") %></td>
         <td><%= show.descricao %></td>
-        <td><%= link_to 'Show', show %></td>
-        <td><%= link_to 'Edit', edit_show_path(show) %></td>
-        <td><%= link_to 'Destroy', show, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', show, class: "btn btn-default", role: "button" %></td>
+        <td><%= link_to 'Edit', edit_show_path(show), class: "btn btn-default", role: "button" %></td>
+        <td><%= link_to 'Destroy', show, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-red", role: "button" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Show', new_show_path %>
+<%= link_to 'New Show', new_show_path, class: "btn btn-default", role: "button" %>
