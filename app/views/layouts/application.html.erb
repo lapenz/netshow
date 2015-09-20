@@ -8,6 +8,13 @@
 </head>
 <body>
 <div id="container">
+  <nav>
+    <ul>
+      <li class="<%= current_page?(shows_path) ? 'active' : '' %>"><%= link_to "Shows", shows_path %></li>
+      <li class="<%= current_page?(bandas_path) ? 'active' : '' %>"><%= link_to "Bandas", bandas_path %></li>
+    </ul>
+  </nav>
+
 <%= yield %>
 </div>
 
