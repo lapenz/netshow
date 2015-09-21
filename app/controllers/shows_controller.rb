@@ -4,7 +4,7 @@ class ShowsController < ApplicationController
   # GET /shows
   # GET /shows.json
   def index
-    @shows = Show.order(:data, :hora)
+    @shows = Show.order(:data, :hora).where(['data >= ?', Date.today])
   end
 
   # GET /shows/1
